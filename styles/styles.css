@@ -94,7 +94,7 @@ main{
 }
 
 .presentacion-2{
-  padding: 10px;
+  padding: 20px;
   /* border: 1px solid red; */
   width: 800px;
   display: flex;
@@ -127,7 +127,10 @@ main{
 
 
 .p-2-parte1{
+  width: 800px;
+  /* border: 1px solid red; */
   display: flex;
+  justify-content: space-between;
 }
 
 
@@ -201,6 +204,7 @@ footer a {
 }
 
 .p-2-parte1{
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
