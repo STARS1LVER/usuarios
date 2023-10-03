@@ -1,6 +1,6 @@
 # Agency Company
 
-![Agency Company Logo](/assets/incio.jpg)
+![Agency Company Logo](/assets/inicio.jpg)
 
 Este proyecto es una aplicación de diseño web que utiliza tecnologías como Bootstrap, JavaScript, HTML y CSS para crear una plataforma de agencia ficticia. La aplicación consta de un sistema de inicio de sesión y un módulo de registro de tablas, con la capacidad de persistir la información mediante el uso de localStorage.
 
