@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="/styles/register.css">
+  <script src="https://kit.fontawesome.com/5f860d3a4f.js" crossorigin="anonymous"></script>
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/pages/index.html">
+          <img src="/assets/logo.png" alt="Bootstrap" width="37" height="39">
+          <span>Agency Company</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dashboard
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/pages/login.html">Login <i class="fa-solid fa-right-to-bracket" style="color: #585858;"></i></a></li>
+                <li><a class="dropdown-item" href="/pages/register-table.html">Register <i class="fa-solid fa-pen-to-square" style="color: #585858;"></i></a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/pages/index.html">Home <i class="fa-solid fa-house" style="color: #585858;"></i> </a></li>
+              </ul>
+            </li>
+    
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+
+    <section class="section-register">
+
+      <div>
+        <form class="form" id="registrationForm">
+          <p class="title">Register </p>
+          <p class="message">Signup now and get full access to our app. </p>
+              <div class="flex">
+              <label>
+                  <input required="" placeholder="" type="text" class="input" name="firstname">
+                  <span>Firstname</span>
+              </label>
+      
+              <label>
+                  <input required="" placeholder="" type="text" class="input" name="lastname">
+                  <span>Lastname</span>
+              </label>
+          </div>  
+                  
+          <label>
+              <input required="" placeholder="" type="number" class="input" name="id">
+              <span>ID ( Cedula )</span>
+          </label> 
+              
+          <label>
+              <input required="" placeholder="" type="text" class="input" name="city">
+              <span>City</span>
+          </label>
+          <label>
+              <input required="" placeholder="" type="text" class="input" name="country">
+              <span>Country</span>
+          </label>
+          <label>
+            <input required="" placeholder="" type="text" class="input" name="email">
+            <span>Email</span>
+          </label>
+          <label>
+            <input required="" placeholder="" type="text" class="input" name="age">
+            <span>Age</span>
+          </label>
+          <label>
+            <input required="" placeholder="" type="text" class="input" name="cellphone">
+            <span>Cellphone</span>
+        </label>
+
+          <button type="button" onclick="agregarRegistro()" class="submit">Submit</button>
+          <p class="signin">Already have an acount ? <a href="#">Signin</a> </p>
+
+          <div class="alert alert-danger" id="error-message" style="display: none;">
+            Por favor, completa todos los campos.
+          </div>
+      </form>
+
+      </div>
+
+
+      <div class="table-responsive">
+        <table class="table table-striped table-primary table-hover custom-table">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Apellido</th>
+              <th scope="col">Ciudad</th>
+              <th scope="col">País</th>
+              <th scope="col">Email</th>
+              <th scope="col">Edad</th>
+              <th scope="col">Celular</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Juan</td>
+              <td>Pérez</td>
+              <td>Bogotá</td>
+              <td>Colombia</td>
+              <td>juan.perez@example.com</td>
+              <td>30</td>
+              <td>3001234567</td>
+            </tr>
+            <!-- Puedes agregar más filas aquí -->
+          </tbody>
+        </table>
+
+      </div>
+
+
+    </section>
+
+  
+
+
+
+
+  </main>
+
+
+  <footer class="bg-primary text-center text-lg-start text-white">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase"> 
+            <img src="/assets/logo.png" alt="Bootstrap" width="37" height="39">
+            <span>Agency Company</span>
+          </h5>
+          <p>
+            Venimos a revolucionar la industria.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Links <i class="fa-solid fa-link" style="color: #ffffff;"></i></h5>
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-dark">company1.com</a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">company2.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Contact <i class="fa-solid fa-address-book" style="color: #ffffff;"></i></h5>
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-dark">Email <i class="fa-solid fa-envelope" style="color: #ffffff;"></i></a>
+            </li>
+            <li>
+              <a href="#!" class="text-dark">CellPhone <i class="fa-solid fa-phone" style="color: #ffffff;"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 All rights reserved:
+      <a class="text-dark" href="/pages/index.html">
+        <img src="/assets/logo.png" alt="Bootstrap" width="27" height="29">
+          <span class="text-white">Agency Company</span>
+      </a>
+    </div>
+  
+  </footer>
+  
+
+
+
+
+
+  <!-- Javascript -->
+  <script src="/js/app.js"></script>
+  <!-- boostrap --> 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
